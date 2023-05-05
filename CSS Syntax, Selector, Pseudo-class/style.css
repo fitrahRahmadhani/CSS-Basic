@@ -1,0 +1,43 @@
+* {
+    background-color: antiquewhite;
+}
+/* Jika ingin memberikan style  pada semua element website, maka kita bisa menggunakan * sebagai selector */
+
+div * {
+    background-color: yellow;
+}
+/* Kode di atas menyeleksi seluruh element pada div (menyeleksi semua element yang ada di dalam suatu element */
+
+#selector {
+    color: green;
+}
+/* Memberikan style pada id tertentu dengan menuliskan # diikuti nama id */
+
+#property {
+    color: red;
+}
+
+.highlight {
+    background-color: black;
+    color: white;
+}
+/* Memberikan style pada class tertentu dengan menuliskan . diikuti nama class */
+
+a[href] {
+    background-color: green;
+}
+/* Memberikan style pada element yang memiliki attribute tertentu */
+
+#container p {
+    background-color: darkgoldenrod;
+}
+/* Memberikan style di semua child element */
+
+#container > p {
+    background-color: darkgoldenrod;
+}
+/* Memberikan style di child element spesifik */
+
+h3, h4 {
+    color: fuchsia;
+}

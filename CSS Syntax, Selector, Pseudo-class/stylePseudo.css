@@ -1,0 +1,10 @@
+h1:hover{
+    background-color: black;
+    color: white;
+}
+/* Hover digunakan untuk memberikan style pada elemnt ketika kursor melewati suatu element */
+
+p:nth-child(2){
+    background-color: purple;
+}
+/* :nth-child() digunakan untuk memberikan style pada elemen yang merupakan child kesekian dari parent elementnya */
