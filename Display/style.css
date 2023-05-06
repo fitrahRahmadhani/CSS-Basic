@@ -1,0 +1,24 @@
+p {
+    background-color: aqua;
+}
+
+span {
+    background-color: lightgreen;
+}
+
+#text-1, #text-2, #text-4, #text-5 {
+    display: inline;
+}
+
+#demo1 {
+    display: inline-block;
+    background-color: aquamarine;
+    width: 150px;
+    height: 200px;
+}
+#demo2 {
+    display: inline-block;
+    background-color: aquamarine;
+    width: 200px;
+    height: 150px;
+}
