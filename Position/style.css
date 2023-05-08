@@ -1,0 +1,63 @@
+.container-static {
+    background: lightgreen;
+    width: 600px;
+    height: 150px;
+}
+
+.yellow-boxes {
+    display: inline-block;
+    margin: 10px;
+    background: yellow;
+    width: 100px;
+    height: 100px;
+}
+
+.inline-block {
+    display: inline-block;
+    margin: 10px;
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+}
+.relative {
+    position: relative;
+    top: 40px;
+}
+
+.small-square {
+    position: absolute;
+    right: 0;
+    height: 80px;
+    width: 80px;
+    background-color: yellow;
+}
+.medium-square {
+    height: 200px;
+    width: 300px;
+    background-color: red;
+}
+.big-square {
+    position: relative;
+    height: 400px;
+    width: 400px;
+    background-color: deepskyblue;
+}
+
+div.fixed {
+    position: fixed;
+    top: 100px;
+    width: 300px;
+    padding: 10px 20px;
+    background-color: #73ad21;
+}
+
+p.content {
+    height: 100vh;
+}
+.sticky {
+    position: sticky;
+    top: 30px;
+    padding: 5px;
+    background-color: yellow;
+    border: 2px solid blue;
+}

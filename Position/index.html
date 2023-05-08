@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Position</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 
+        POSITION: STATIC    
+    Secara default position dari elemen HTML memiliki nilai static. Position tersebut tidak terpengaruhi oleh properti seperti top, bottom, left, dan right (selalu berada sesuai dengan alur normal penempatan elemen dalam halaman web) 
+    -->
+    <div class="container-static">
+        <div class="yellow-boxes" style="top: 20px;"></div>
+        <div class="yellow-boxes" style="right: 20px;"></div>
+        <div class="yellow-boxes" style="bottom: 20px;"></div>
+        <div class="yellow-boxes" style="left: 20px;"></div>
+    </div>
+
+    <!-- 
+        POSITION: RELATIVE  
+    Element dengan posisi relative akan diposisikan relatif dari posisi normalnya. Kita bisa memberikan properti top, right, bottom, dan left pada element dengan posisi relative. Element lain di sekitar element dengan posisi relative tidak akan disesuaikan dengan ruang yang ditinggalkan oleh element 
+    -->
+    <div>
+        <div class="inline-block"></div>
+        <div class="inline-block relative"></div>
+        <div class="inline-block"></div>
+    </div>
+
+
+    <!-- 
+        POSITION: ABSOLUTE 
+    Element dengan posisi absolute akan diposisikan relative dengan posisi ancestor terdekat yang posisinya bukan static
+    Apa itu ancestor? semua element yang berada di tingkat atasnya
+    -->
+    <div class="big-square">
+		<div class="medium-square">
+			<div class="small-square"></div>
+		</div>
+	</div>
+
+    <!-- 
+        POSITION: FIXED 
+    Element dengan posisi fixed akan diposisikan relatif terhadap viewport browser, di mana akan selalu berada di tempat yang sama walaupun halaman website di-scroll.
+    Kita bisa memberikan properti top, bottom, right, dan left pada elemen yang memiliki style psoition: fixed
+    -->
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+        est laborum.
+    </p>
+
+    <div class="fixed">
+        This div element has position: fixed;
+    </div>
+
+    <!-- 
+        POSITION: STICKY
+    Element dengan posisi sticky akan diposisikan berdasarkan scroll halaman user. Sticky sejatinya gabungan antara relative dengan fixed. Untuk melihat hasil dari position sticky setidaknya kita butuh mengatur salah satu nilai dari proprti top, right, bottom, left.
+    -->
+    body>
+    <p>Cobalah scroll halaman website ini</p>
+    
+    <div class="sticky">I am sticky!</div>
+    
+    <p class="content">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+        est laborum.
+    </p>
+</body>
+</html>
