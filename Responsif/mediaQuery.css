@@ -1,0 +1,19 @@
+body {
+    max-width: 800px;
+}
+
+.button-group {
+    display: flex;
+}
+
+button {
+    font-size: 25px;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .button-group {
+        display: flex;
+        flex-direction: column;
+    }
+}

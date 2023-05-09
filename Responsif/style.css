@@ -1,0 +1,15 @@
+div{
+    background-color: yellow;
+    width: 100%;
+}
+div img{
+    width: 50%; /*Kita bisa menggunakan presentase untuk menentukan lebar suatu elemen agar sama dengan lebar parent element-nya*/
+}
+img{
+    max-width: 100%; /*max-width berfungsi untuk menentukan batas akhir dari suatu element*/
+    height: auto;
+}
+
+h1{
+    font-size: 5vw;
+}
