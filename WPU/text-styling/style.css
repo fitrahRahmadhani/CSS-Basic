@@ -1,0 +1,14 @@
+h1 {
+    color: skyblue;
+    font-size: 150px;
+    line-height: 0px;
+    text-transform: uppercase;
+    letter-spacing: 120%;
+}
+p{
+    text-align: justify;
+    text-indent: 50px;
+}
+a{
+    text-decoration: none;
+}
