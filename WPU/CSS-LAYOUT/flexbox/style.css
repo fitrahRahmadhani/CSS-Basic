@@ -1,4 +1,4 @@
-html, body{
+html, body, figure, p{
     margin: 0;
     padding: 0;
 }
@@ -51,6 +51,73 @@ body{
     background-color: red;
 }
 
+/* Latihan 3 */
+.container-tiga{
+    width: 800px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.thumbnail{
+    width: 50%;
+}
+.container-tiga .thumbnail img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Latihan 4 */
+.container-empat{
+    width: 800px;
+    margin: 50px auto;
+    display: flex;
+}
+.card{
+    border: 1px solid #AAA;
+    border-radius: 10px;
+    background-color: #EEE;
+    overflow: hidden;
+    margin: 8px;
+    flex: 1;
+}
+.card .header{
+    height: 150px;
+    background-color: #666;
+}
+
+.card .content{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.besar{
+    transform: scale(1.1);
+}
+
+/* Latihan 5 */
+.container-lima{
+    width: 800px;
+    height: 800px;
+    margin: 50px auto;
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.kotak{
+    width: 200px;
+    height: 200px;
+    background-color: #666;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+
 /* Responsive */
 @media( min-width: 600px ){
     .container-dua{
@@ -59,5 +126,8 @@ body{
     }
     .layanan{
         width: 30%;
+    }
+    .thumbnail{
+        width: 25%;
     }
 }
