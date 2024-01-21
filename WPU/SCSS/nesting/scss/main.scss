@@ -1,0 +1,23 @@
+.main {
+    .container &{
+        background-color: aqua;
+    }
+    .main-heading{
+        font-size: 2em;
+    }
+    .main-paragraf{
+        font-size: 1.4em;
+    }
+    &:hover{
+        background-color: powderblue;
+    }
+}
+
+.footer{
+    & &-heading{
+        font-size: 2em;
+    }
+    & &-paragraf{
+        font-size: 1.4em;
+    }
+}

@@ -1,0 +1,28 @@
+// Global Variabel
+$primary-color: red;
+$secondary-color: blue;
+
+body{
+    // Local variabel
+    $background-color: grey;
+    background-color: $background-color;
+}
+.header{
+    h1{
+        color: $primary-color;
+    }
+    p{
+        color: $secondary-color;
+    }
+}
+
+// MAP
+$alert: (
+    'danger': red,
+    'success': green,
+    'warning': orange,
+);
+
+.header h1{
+    color: map-get($map: $alert, $key: 'success')
+}
