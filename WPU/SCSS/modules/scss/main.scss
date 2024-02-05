@@ -1,0 +1,39 @@
+@import 'mixin';
+
+.header ul{
+    @include inline-list();
+    li{
+        background-color: black;
+        padding: 20px;
+        a{
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
+.footer ul{
+    @include inline-list();
+    li{
+        background-color: pink;
+        padding: 10px;
+        a{
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
+
+// Arguments pada mixin
+.container{
+    @include flex-box(column, center);
+    width: 600px;
+    height: 400px;
+    background-color: #eaeaea;
+    .box{
+        width: 60px;
+        height: 60px;
+        background-color: lightgreen;
+        text-align: center;
+        line-height: 60px;
+    }
+}
