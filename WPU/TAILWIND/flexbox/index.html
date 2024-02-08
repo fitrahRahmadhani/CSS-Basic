@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Flexbox</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        #toggle:checked ~ label div.toggle-circle {
+            transform: translateX(12px);
+        }
+    </style>
+</head>
+<body class="dark:bg-slate-800 dark:text-slate-200">
+    <h1 class="text-8xl text-center font-bold my-10">Mari belajar <span class="text-transparent bg-gradient-to-r from-blue-500 to-teal-500 bg-clip-text">Tailwind</span></h1>
+
+    <section class="mb-10 bg-gradient-to-tr from-indigo-500 to-pink-500">
+        <h2 class="text-3xl text-center">Spacing</h2>
+        <div class="m-13">Margin</div>
+        <div class="py-4 px-2">Padding</div>
+    </section>
+
+    <section class="mb-10 bg-green-200">
+        <h2 class="text-3xl text-center">Sizing</h2>
+        <div class="w-1/2 h-32 bg-wpu">Kotak 1</div>
+    </section>
+
+    <section class="font-inter max-w-3xl mx-auto" >
+        <h2 class="mb-2 text-4xl font-bold">Belajar Mengenai Typography pada TailwindCSS</h2>
+        <div class="mb-4 text-lg text-gray-500">
+            By <a href="" class="text-gray-700 font-semibold">Lorem</a>, 4 Pebruari 2024
+        </div>
+        <p class="mb-4">Lorem ipsum dolor sit amet <a href="" class="underline font-semibold text-blue-500">consectetur</a>, adipisicing elit. Voluptatibus a nemo consequatur eos excepturi quae tempore. Consectetur placeat, amet beatae natus cumque perferendis molestias. Ipsa, adipisci. Tenetur quam magni ex?</p>
+        <p class="mb-4 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt illo nostrum expedita laboriosam sapiente similique cupiditate cumque quam facilis rem cum harum nemo magnam amet sit, praesentium at temporibus. Maiores a amet doloremque sit quia reiciendis iure blanditiis repellat similique?</p>
+        <blockquote class="mb-4 italic font-thin text-xl">"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam excepturi reiciendis illum impedit modi error odit numquam facilis! Quos, magnam?"</blockquote>
+    </section>
+
+    <div class="mb-11 max-w-xl h-96 bg-[#bada55] mx-auto mt-[42px] overflow-y-scroll bg-fixed" style="background-image: url('https://source.unsplash.com/1000x600')">
+        <p class="p-5 text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis veniam pariatur eos ratione, aperiam quos nesciunt reprehenderit impedit odio ducimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci non autem quisquam quos quaerat voluptates? Possimus hic accusamus dicta est laborum aspernatur rerum officiis perspiciatis dolor vero, mollitia fugit iste. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, repellat odio facilis mollitia perspiciatis enim ullam molestiae, ducimus maiores minus aperiam corporis repellendus iure sit est, temporibus tempore vitae laboriosam?</p>
+    </div>
+
+    <div class="mt-32 max-w-xl mx-auto h-96 bg-slate-300 bg-contain bg-no-repeat bg-center rounded-2xl border-2 border-solid border-red-500 shadow-xl shadow-red-100" style="background-image: url(https://source.unsplash.com/200x200);"></div>
+
+
+    <div class="mt-32 max-w-xl mx-auto h-96 bg-slate-300 bg-cover bg-center rounded-2xl border-2 border-solid border-slate-500 shadow-xl shadow-slate-100 blur-sm" style="background-image: url(https://source.unsplash.com/300x300);"></div>
+
+    <div class="mt-32 max-w-xl mx-auto h-96 bg-slate-300 bg-cover bg-center rounded-2 border-8 shadow-xl shadow-slate-100 overflow-hidden flex" style="background-image: url(https://source.unsplash.com/350x350);">
+        <div class="w-[200px] h-[200px] bg-white/30 m-auto backdrop-blur-sm">
+
+        </div>
+    </div>
+
+    <hr class="my-20">
+
+    <div class="flex justify-center">
+        <span class="text-sm text-slate-500 mr-2">Light</span>
+        <input type="checkbox" id="toggle" class="hidden">
+        <label for="toggle">
+            <div class="w-9 h-5 bg-slate-500 rounded-full flex items-center p-1 cursor-pointer">
+                <div class="w-4 h-4 bg-white rounded-full toggle-circle"></div>
+            </div>
+        </label>
+        <span class="text-sm text-slate-500 ml-2">Dark</span>
+    </div>
+
+    <button class="my-10 bg-sky-500 px-5 py-2 rounded-full text-white font-semibold font-inter block mx-auto hover:bg-sky-600 active:bg-sky-700 focus:ring focus:ring-sky-300 dark:bg-slate-300 dark:text-slate-800 dark:hover:text-slate-900 dark:hover:bg-slate-100">Simpan</button>
+
+    <div class="max-w-lg my-10 border border-slate-200 rounded-xl mx-auto p-5 shadow-md font-inter hover:bg-sky-500 group dark:hover:bg-slate-300">
+        <h5 class="font-bold text-slate-700 text-lg mb-3 group-hover:text-white dark:group-hover:text-slate-800">My Card</h5>
+        <p class="font-serif text-slate-600 group-hover:text-white selection:bg-lime-300 selection:text-slate-900
+        first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:float-left first-letter:mr-3 dark:group-hover:text-slate-800">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto neque fugiat, earum, ad esse at perspiciatis commodi rerum aspernatur error cupiditate nisi quas repudiandae architecto maiores laboriosam numquam aliquam qui!</p>
+    </div>
+    
+    <div class="max-w-lg border border-slate-200 rounded-xl mx-auto shadow-md font-inter p-5">
+        <form action="">
+            <label for="email">
+                <span class="block font-semibold mb-1 text-slate-700 after:content-['*'] after:text-pink-500 after:ml-0.5">Email</span>
+                <input type="email" id="email" placeholder="Masukkan email..." class="px-3 py-2 shadow border rounded w-full block text-sm placeholder:text-slate-400 focus:outline-none focus:ring-1 focus:ring-sky-500 focus:border-sky-500 invalid:text-pink-700 invalid:focus:ring-pink-700 invalid:focus:border-pink-700 peer">
+                <p class="mt-2 invisible peer-invalid:visible text-pink-600 text-sm">Email tidak valid</p>
+            </label>
+        </form>
+    </div>
+
+    <hr class="my-20">
+
+    <div class="w-40 h-40 bg-sky-500 mx-auto rounded-lg shadow-lg hover:scale-125 hover:rotate-45 hover:bg-pink-500 hover:translate-x-16 transition origin-top-left ">    </div>
+
+    <div class="w-40 h-40 bg-pink-500 mx-auto mt-20 group">
+        <div class="w-full h-full bg-sky-500 rounded-lg group-hover:rotate-45 transition origin-top-left animate-spin-slow"></div>
+    </div>
+
+    <div class="w-40 h-40 bg-pink-500 rounded-full mx-auto mt-20 group">
+        <div class="w-full h-full bg-pink-500 rounded-full animate-ping"></div>
+    </div>
+
+    <hr class="my-20 border-t-2">
+
+    <div class="container mx-auto">
+        <div class="border rounded-lg shadow-lg p-10 relative">
+            <div class="w-10 h-10 bg-pink-200 rounded-full flex absolute -top-5 -right-5 cursor-pointer"><span class="text-xl m-auto">❌</span></div>
+            <img src="https://source.unsplash.com/120x120" class="float-left mr-4">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia fuga ea corporis at commodi laudantium est porro ut magni adipisci expedita, culpa veniam tempora, eaque enim, atque quod! Sed rerum nesciunt ullam illum repellendus iure doloremque, harum eos maxime possimus temporibus in, repellat deleniti ad fuga perferendis voluptas amet nostrum nihil molestiae. Assumenda, totam repellat nisi inventore ipsa, quidem perferendis mollitia tempora blanditiis quam labore voluptates laborum itaque numquam sint quis ut. Alias in ab pariatur magni sapiente rem odio quasi numquam officiis omnis laboriosam optio inventore corporis minima architecto eaque perspiciatis, exercitationem eius reiciendis commodi et quam? Velit, minima?</p>
+        </div>
+    </div>
+
+    <div class="container mx-auto mt-44">
+        <div class="border rounded-lg shadow-lg p-10 relative">
+            <div class="w-28 h-10 bg-purple-200 rounded-full flex absolute -top-5 left-1/2 -translate-x-1/2 cursor-pointer"><span class="text-xl m-auto">✔️</span></div>
+            <img src="https://source.unsplash.com/120x120" class="float-left mr-4">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia fuga ea corporis at commodi laudantium est porro ut magni adipisci expedita, culpa veniam tempora, eaque enim, atque quod! Sed rerum nesciunt ullam illum repellendus iure doloremque, harum eos maxime possimus temporibus in, repellat deleniti ad fuga perferendis voluptas amet nostrum nihil molestiae. Assumenda, totam repellat nisi inventore ipsa, quidem perferendis mollitia tempora blanditiis quam labore voluptates laborum itaque numquam sint quis ut. Alias in ab pariatur magni sapiente rem odio quasi numquam officiis omnis laboriosam optio inventore corporis minima architecto eaque perspiciatis, exercitationem eius reiciendis commodi et quam? Velit, minima?</p>
+        </div>
+    </div>
+
+    <div class="container mx-auto border rounded-lg shadow-lg p-10 mt-20 columns-3">
+        <img src="https://source.unsplash.com/600x400" alt="">
+        <img src="https://source.unsplash.com/600x400" alt="">
+        <img src="https://source.unsplash.com/600x400" alt="">
+        <img src="https://source.unsplash.com/600x400" alt="">
+        <img src="https://source.unsplash.com/600x400" alt="">
+        <img src="https://source.unsplash.com/600x400" alt="">
+        <img src="https://source.unsplash.com/600x400" alt="">
+    </div>
+    
+    <hr class="my-20 border-t-4">
+
+    <div class="container px-6 font-inter max-w-md mx-auto sm:max-w-xl md:max-w-5xl lg:flex lg:max-w-full lg:p-0">
+        <div class="lg:p-12 flex-1">
+            <h3 class="text-4xl font-bold text-slate-800 sm:text-5xl md:text-7xl">Fitrah Rahmadhani</h3>
+            <img src="https://source.unsplash.com/1280x960" class="mt-4 rounded-xl shadow-xl sm:mt-6 sm:h-64 sm:w-full sm:object-cover sm:object-center md:w-full md:object-cover md:object-center lg:hidden" alt="">
+            <h2 class="mt-6 text-2xl font-semibold-semi text-slate-800 sm:mt-8 sm:text-4xl">Mari Belajar Programming Bersama WPU</h2>
+            <p class="mt-2 text-slate-600 sm:mt-4 sm:text-xl">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus numquam repellendus at, pariatur, nemo quo labore, odio dolor aperiam modi dignissimos. Repudiandae officia omnis consectetur dolor rem nulla doloribus explicabo id animi incidunt exercitationem autem, natus aut tempora eligendi excepturi maiores in temporibus ullam recusandae. Aspernatur, iure consequuntur perferendis quaerat pariatur expedita cupiditate eligendi facere vero eius voluptates quam totam dolor mollitia dicta neque earum, optio itaque ipsam. Fuga placeat adipisci nemo sed ducimus aliquid laboriosam, sit eligendi asperiores perferendis nam ullam atque quas debitis quia amet ipsa quidem. Et, autem! Rerum atque quibusdam neque earum quod veritatis culpa? Modi.
+            </p>
+            <div class="mt-4 sm:mt-6 ">
+                <a href="#" class="inline-block px-5 py-3 bg-red-600 text-white rounded-lg uppercase font-semibold tracking-wider text-sm sm:text-base">Subscribe Channel YouTube</a>
+            </div>
+        </div>
+        <div class="hidden lg:flex lg:rounded-3xl lg:overflow-hidden">
+            <img src="https://source.unsplash.com/1280x960" class="lg:object-cover lg:object-center" alt="">
+        </div>
+    </div>
+
+
+
+    <div class="w-16 h-16 bg-sky-200 rounded-xl flex fixed right-4 bottom-4 cursor-pointer"><a href="#" class="text-xl m-auto">⬆️</a></div>
+
+
+    <h2 class="mt-24 mb-10 text-center font-bold text-3xl text-slate-700">My Gallery</h2>
+    <div class="container mx-auto px-6 font-inter sm:flex sm:flex-wrap sm:gap-6 sm:justify-evenly">
+        <div class="rounded-md shadow-lg overflow-hidden mb-10 sm:mb-0 sm:w-64 bg-white md:w-80 lg:w-72">
+            <img src="https://source.unsplash.com/600x400" class="w-full" alt="">
+            <div class="px-6 py-4">
+                <h1 class="font-bold text-lg mb-2 text-slate-700">Image Title</h1>
+                <p class="text-sm text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, libero!</p>
+            </div>
+        </div>
+        <div class="rounded-md shadow-lg overflow-hidden mb-10 sm:mb-0 sm:w-64 bg-white md:w-80 lg:w-72">
+            <img src="https://source.unsplash.com/600x400" class="w-full" alt="">
+            <div class="px-6 py-4">
+                <h1 class="font-bold text-lg mb-2 text-slate-700">Image Title</h1>
+                <p class="text-sm text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, libero!</p>
+            </div>
+        </div>
+        <div class="rounded-md shadow-lg overflow-hidden mb-10 sm:mb-0 sm:w-64 bg-white md:w-80 lg:w-72">
+            <img src="https://source.unsplash.com/600x400" class="w-full" alt="">
+            <div class="px-6 py-4">
+                <h1 class="font-bold text-lg mb-2 text-slate-700">Image Title</h1>
+                <p class="text-sm text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, libero!</p>
+            </div>
+        </div>
+        <div class="rounded-md shadow-lg overflow-hidden mb-10 sm:mb-0 sm:w-64 bg-white md:w-80 lg:w-72">
+            <img src="https://source.unsplash.com/600x400" class="w-full" alt="">
+            <div class="px-6 py-4">
+                <h1 class="font-bold text-lg mb-2 text-slate-700">Image Title</h1>
+                <p class="text-sm text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, libero!</p>
+            </div>
+        </div>
+        <div class="rounded-md shadow-lg overflow-hidden mb-10 sm:mb-0 sm:w-64 bg-white md:w-80 lg:w-72">
+            <img src="https://source.unsplash.com/600x400" class="w-full" alt="">
+            <div class="px-6 py-4">
+                <h1 class="font-bold text-lg mb-2 text-slate-700">Image Title</h1>
+                <p class="text-sm text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, libero!</p>
+            </div>
+        </div>
+    </div>
+    <div class="mb-96"></div>
+
+    <script>
+        const checkbox = document.querySelector('#toggle');
+        const html = document.querySelector('html');
+        checkbox.addEventListener('click', function(){
+            checkbox.checked ? html.classList.add('dark') : html.classList.remove('dark');
+        })
+    </script>
+</body>
+</html>
